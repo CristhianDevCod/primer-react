@@ -1,0 +1,76 @@
+.tw-followCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.tw-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.tw-followCard-info {
+    display: grid;
+    margin-right: 1rem;
+}
+
+.tw-followCard-infoAddres {
+    font-weight: 500;
+    color: #6e6e6e;
+}
+
+.tw-followCard-avatar{
+    border-radius: 1000px;
+    width: 70px;
+}
+
+
+.tw-followCard-button{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    font-weight: bold;
+    border: solid 1px transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    width: 120px;
+}
+
+.tw-followCard-button:hover {
+    border: solid 1px lightblue;
+    background-color: #222;
+    color: lightblue;
+}
+
+.tw-followCard-button.is-following {
+    background-color: lightskyblue;
+}
+
+.tw-followCard-button.is-following:hover {
+    background-color: #222;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-btn{
+    display: none;
+}
+
+.tw-followCard-button.is-following:hover .tw-followCard-stopFollow{
+    display: block;
+}
+
+.tw-followCard-stopFollow{
+    display: none;
+}
+
+
+.App{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
