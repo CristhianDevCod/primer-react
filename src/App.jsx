@@ -21,6 +21,19 @@ export function App(){
                 >
                     Jesus Sacarias
             </TwitterFollowCard>
+
+            <TwitterFollowCard 
+                userName="velasquez"
+                >
+                    velasquez velez
+            </TwitterFollowCard>
+
+            <TwitterFollowCard 
+                userName="tatiana"
+                initialIsFollowing
+                >
+                    tatiana valdez
+            </TwitterFollowCard>
         </section>
     )
 }

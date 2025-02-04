@@ -15,6 +15,7 @@ export function TwitterFollowCard({children, userName, initialIsFollowing}){
 
     //Renderizado de imagen
     const srcImg = `https://unavatar.io/${userName}`
+    const avatarName = `avatar de ${children}`
 
     return (
         <article className='tw-followCard'>
@@ -22,7 +23,7 @@ export function TwitterFollowCard({children, userName, initialIsFollowing}){
                 <img
                     className='tw-followCard-avatar' 
                     src={srcImg} 
-                    alt="avatar" 
+                    alt={avatarName} 
                 />
                 <div className='tw-followCard-info'>
                     <strong>{children}</strong>
